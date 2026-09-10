@@ -1,2 +1,3 @@
 # empresasaludable-org
-Redirección de www.empresasaludable.org al sitio principal www.empresasaludable.net (GitHub Pages)
+
+Redirección de `www.empresasaludable.org` al sitio principal `https://www.empresasaludable.net/`, servida por GitHub Pages.
