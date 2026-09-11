@@ -24,5 +24,6 @@ jobs:
       - env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh api -X PUT "repos/${GITHUB_REPOSITORY}/pages" -f cname=www.empresasaludable.org || true
+          # Custom domain is managed in the repository Pages settings (apex empresasaludable.org, www redirects to it).
+          # HTTPS enforcement only succeeds once GitHub has issued the certificate.
           gh api -X PUT "repos/${GITHUB_REPOSITORY}/pages" -F https_enforced=true || true
